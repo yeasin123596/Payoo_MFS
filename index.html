@@ -1,39 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- Tailwind CDN -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Daisy UI CDN -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Fonts CDN -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-<body class="bg-[#F4F5F7] font-[Outfit] ">
-    <header class=" max-w-md  h-[100vh] mx-auto flex flex-col justify-center items-center p-4">
-        <nav>
-            <img src="./assets/Logo-full.png" alt="">
-        </nav>
-        <!-- LogIn form Section -->
-         <section class=" p-8 mt-8 bg-white
-         rounded-3xl">
-            <form action="" >
-                <div class="mb-5">
-                    <label for="" class="font-medium md:text-xl ">Mobile Number</label>
-                    <input type="text" placeholder="Enter your number" class="input rounded-3xl bg-[#F4F5F7] mt-3" />
-                </div>
-                <div >
-                    <label for="" class="font-medium md:text-xl">4 Digit Pin</label>
-                    <input type="text" placeholder="Enter 4 Digit Pin" class="input rounded-3xl bg-[#F4F5F7] mt-3" />
-                </div>
-                <button class="btn bg-[#3B25C1] text-white md:text-xl w-full rounded-3xl mt-4">Login</button>
-            </form>
-         </section>
+  <body class="bg-[#F4F5F7] font-[Outfit]">
+    <!-- Header part (login page) -->
+    <header
+      class="max-w-md h-[100vh] mx-auto flex flex-col justify-center items-center p-4"
+    >
+      <!-- Logo -->
+      <nav>
+        <img src="./assets/Logo-full.png" alt="" />
+      </nav>
+      <!-- LogIn form Section -->
+      <section class="p-8 mt-8 bg-white rounded-3xl">
+        <form action="">
+          <div class="mb-5">
+            <label for="" class="font-medium md:text-xl">Mobile Number</label>
+            <input
+              type="text"
+              placeholder="Enter your number"
+              class="input rounded-3xl bg-[#F4F5F7] mt-3"
+            />
+          </div>
+          <div>
+            <label for="" class="font-medium md:text-xl">4 Digit Pin</label>
+            <input
+              type="text"
+              placeholder="Enter 4 Digit Pin"
+              class="input rounded-3xl bg-[#F4F5F7] mt-3"
+            />
+          </div>
+          <button
+            class="btn bg-[#3B25C1] text-white md:text-xl w-full rounded-3xl mt-4"
+          >
+            Login
+          </button>
+        </form>
+      </section>
     </header>
-</body>
+  </body>
 </html>

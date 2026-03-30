@@ -3,7 +3,7 @@ const loginButton = document.getElementById("login-button");
 loginButton.addEventListener('click', function(event){
     event.preventDefault();
     
-    const mobileNumber = 1234567890;
+    const mobileNumber = 12345678901;
     const pinNumber = 1234;
 
     const mobileNumberValue = document.getElementById("mobile-number").value;
@@ -12,9 +12,13 @@ loginButton.addEventListener('click', function(event){
     const pinNumberValue = document.getElementById("pin-number").value;
     const pinNumberValueConverted = parseInt(pinNumberValue);
 
-    if ( mobileNumber === mobileNumberValueConverted  && pinNumber === pinNumberValueConverted) {
-        window.location.href="./home.html";
+    if( mobileNumberValue.length ===  11 && mobileNumberValueConverted === mobileNumber) {
+        if ( pinNumberValueConverted === pinNumber) {
+            window.location.href="./home.html";
+        } else {
+            alert("Incorrect Pin");
+        }
     } else {
-        alert("Invalid Credentials");
+        alert("Please Check Your Mobile Number");
     }
 })

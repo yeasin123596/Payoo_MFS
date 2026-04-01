@@ -12,7 +12,9 @@ loginButton.addEventListener('click', function(event){
     const pinNumberValue = document.getElementById("pin-number").value;
     const pinNumberValueConverted = parseInt(pinNumberValue);
 
-    if( mobileNumberValue.length ===  11 && mobileNumberValueConverted === mobileNumber) {
+    if( mobileNumberValue.length ===  11 &&
+        mobileNumberValueConverted === mobileNumber) 
+        {
         if ( pinNumberValueConverted === pinNumber) {
             window.location.href="./home.html";
         } else {

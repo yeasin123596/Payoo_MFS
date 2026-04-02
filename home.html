@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Home page</h1>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+<body class="max-w-lg  mx-auto font-[Outfit] px-6 py-4">
+    <!-- Logo and Nav Bar -->
+     <header>
+        <nav class="flex justify-between items-center border-b-1 border-gray-400 py-3">
+          <!-- Logo and Balance -->
+          <div class="flex gap-2">
+            <!-- logo -->
+            <img src="./assets/logo.png" alt="" class="w-16 h-12">
+            <!-- Balance -->
+            <div >
+                <h2 class="font-bold text-xl">$ <span>45000</span></h2>
+                <p class="font-normal text-[1.2rem] text-[#08080880]">Available Balance</p>
+            </div>
+          </div>
+          <!-- LogOut Button -->
+          <div>
+            <button class="btn border border-gray-400 bg-white text-[#08080880]
+            rounded-lg">
+              Log Out
+            <i class="fa-solid fa-arrow-right-from-bracket "></i>
+            </button>
+          </div>
+        </nav>
+     </header>
+    
 </body>
 </html>

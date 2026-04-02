@@ -22,10 +22,11 @@
     <!-- Font Awesome CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-<body class="max-w-lg  mx-auto font-[Outfit] px-6 py-4">
-    <!-- Logo and Nav Bar -->
+<body class=" font-[Outfit] bg-[#F4F5F7] ">
+    <div class="max-w-lg  mx-auto bg-white rounded-b-xl  py-4">
+      <!-- Logo and Nav Bar -->
      <header>
-        <nav class="flex justify-between items-center border-b-1 border-gray-400 py-3">
+        <nav class="flex justify-between items-center border-b-1 border-gray-400 px-4 py-3">
           <!-- Logo and Balance -->
           <div class="flex gap-2">
             <!-- logo -->
@@ -46,6 +47,103 @@
           </div>
         </nav>
      </header>
-    
+    <!-- Features Button Section -->
+     <section class="px-4 mt-8">
+      <!-- Hero Text -->
+      <div>
+        <h1 class="font-bold text-2xl">Welcome to Pay<span class="text-[#7460FF]">oo</span></h1>
+        <p class="text-[#08080880] text-[1rem] mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+      </div>
+      <!-- Features Card container -->
+       <div class="grid grid-cols-3 gap-4 mt-6">
+        <!-- feature-1 -->
+        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+          <img src="./assets/opt-1.png" class="mx-auto mb-2" alt="">
+          <h2 class="text-[#08080880]">Add Money</h2>
+        </div>
+        <!-- feature-2 -->
+        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+          <img src="./assets/opt-2.png" class="mx-auto mb-2" alt="">
+          <h2 class="text-[#08080880]">Add Money</h2>
+        </div>
+        <!-- feature-3 -->
+        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+          <img src="./assets/opt-3.png" class="mx-auto mb-2" alt="">
+          <h2 class="text-[#08080880]">Add Money</h2>
+        </div>
+        <!-- feature-4 -->
+        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+          <img src="./assets/opt-4.png" class="mx-auto mb-2" alt="">
+          <h2 class="text-[#08080880]">Add Money</h2>
+        </div>
+        <!-- feature-5 -->
+        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+          <img src="./assets/opt-5.png" class="mx-auto mb-2" alt="">
+          <h2 class="text-[#08080880]">Add Money</h2>
+        </div>
+        <!-- feature-6 -->
+        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+          <img src="./assets/opt-6.png" class="mx-auto mb-2" alt="">
+          <h2 class="text-[#08080880]">Add Money</h2>
+        </div>
+       </div>
+     </section>
+    </div>
+
+    <!-- All forms section -->
+     <section class="max-w-lg  mx-auto px-4 mt-4 pb-32">
+
+      <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Add Money</h1>
+      
+        <!-- Form -->
+        <form action="" class="bg-white rounded-2xl p-6">
+          
+          <div class="mb-4">
+            <h1 class="font-medium text-[#080808b3]">Select A Bank</h1>
+            <select class="select w-full rounded-3xl mt-3">
+              <option>Bank A</option>
+              <option>Bank B</option>
+              <option>Bank C</option>
+              <option>Bank D</option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="" class="font-medium text-[#080808b3]">Bank Account Number</label>
+            <input
+              type="text"
+              
+              placeholder="Enter 11 digit account number"
+              class="input rounded-3xl  mt-3 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="" class="font-medium text-[#080808b3]">Amount to Add</label>
+            <input
+              type="text"
+              
+              placeholder="Add Amount to add"
+              class="input rounded-3xl  mt-3 w-full"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
+            <input
+              type="text"
+              
+              maxlength="4"
+              inputmode="numeric"
+              placeholder="Enter 4 digit pin number"
+              class="input rounded-3xl  mt-3 w-full"
+            />
+          </div>
+          
+          <button  class="btn bg-[#3B25C1] text-white md:text-xl w-full rounded-3xl mt-3 py-6">
+            Add Money
+          </button>
+          
+        </form>
+      
+     </section>
 </body>
 </html>

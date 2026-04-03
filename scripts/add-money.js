@@ -30,3 +30,11 @@ document.getElementById("add-money-button")
     this.form.reset();
  
 })
+
+document.getElementById("logout-button")
+.addEventListener('click', function(event){
+    event.preventDefault();
+
+    window.location.href="./index.html"
+
+})

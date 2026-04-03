@@ -19,8 +19,10 @@ loginButton.addEventListener('click', function(event){
             window.location.href="./home.html";
         } else {
             alert("Incorrect Pin");
+            document.getElementById("pin-number").value = '';
         }
     } else {
         alert("Please Check Your Mobile Number");
     }
+    
 })

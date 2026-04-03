@@ -33,7 +33,7 @@
             <img src="./assets/logo.png" alt="" class="w-16 h-12">
             <!-- Balance -->
             <div >
-                <h2 class="font-bold text-xl">$ <span>45000</span></h2>
+                <h2 class="font-bold text-xl">$ <span id="available-amount">45000</span></h2>
                 <p class="font-normal text-[1.2rem] text-[#08080880]">Available Balance</p>
             </div>
           </div>
@@ -97,10 +97,10 @@
       
         <!-- Form -->
         <form action="" class="bg-white rounded-2xl p-6">
-          
+          <!-- Bank select -->
           <div class="mb-4">
             <h1 class="font-medium text-[#080808b3]">Select A Bank</h1>
-            <select class="select w-full rounded-3xl mt-3">
+            <select id="bank" class="select w-full rounded-3xl mt-3">
               <option disabled selected>Select Bank</option>
               <option>Bank A</option>
               <option>Bank B</option>
@@ -108,29 +108,36 @@
             </select>
           </div>
 
+          <!-- Account Number -->
           <div class="mb-4">
             <label for="" class="font-medium text-[#080808b3]">Bank Account Number</label>
             <input
               type="text"
-              
+              id="account-number"
+              inputmode="numeric"
               placeholder="Enter 11 digit account number"
               class="input rounded-3xl  mt-3 w-full"
             />
           </div>
+
+          <!-- Amount -->
           <div class="mb-4">
             <label for="" class="font-medium text-[#080808b3]">Amount to Add</label>
             <input
               type="text"
-              
+              id="amount"
+              inputmode="numeric"
               placeholder="Add Amount to add"
               class="input rounded-3xl  mt-3 w-full"
             />
           </div>
+
+          <!-- Pin Number -->
           <div class="mb-4">
             <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
             <input
               type="text"
-              
+              id="pin"
               maxlength="4"
               inputmode="numeric"
               placeholder="Enter 4 digit pin number"
@@ -138,12 +145,15 @@
             />
           </div>
           
-          <button  class="btn bg-[#3B25C1] text-white md:text-xl w-full rounded-3xl mt-3 py-6">
+          <!-- Add Money Button -->
+          <button id="add-money-button"  class="btn bg-[#3B25C1] text-white md:text-xl w-full rounded-3xl mt-3 py-6">
             Add Money
           </button>
           
         </form>
       
      </section>
+
+     <script src="./scripts/add-money.js"></script>
 </body>
 </html>

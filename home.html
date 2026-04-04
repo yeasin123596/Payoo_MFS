@@ -163,7 +163,7 @@
             
             <!-- Agent Number -->
             <div class="mb-4">
-              <label for="" class="font-medium text-[#080808b3]">Bank Account Number</label>
+              <label for="" class="font-medium text-[#080808b3]">Agent Number</label>
               <input
                 type="text"
                 id="account-number"
@@ -175,12 +175,12 @@
 
             <!-- Amount -->
             <div class="mb-4">
-              <label for="" class="font-medium text-[#080808b3]">Amount to Add</label>
+              <label for="" class="font-medium text-[#080808b3]">Amount</label>
               <input
                 type="text"
                 id="amount"
                 inputmode="numeric"
-                placeholder="Add Amount to add"
+                placeholder="Enter Amount to Cash Out"
                 class="input rounded-3xl  mt-3 w-full"
               />
             </div>
@@ -201,6 +201,157 @@
             <!-- Cash Out Button -->
             <button id="add-money-button"  class="btn bg-[#3B25C1] text-white    md:text-xl w-full rounded-3xl mt-3 py-6">
               Cash Out
+            </button>
+          </form>
+        </section>
+        <!-- Transfer Money Form -->
+        <section id="cash-out-form" class="max-w-lg  mx-auto px-4 mt-4 pb-32">
+
+          <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Transfer Money</h1>
+      
+          <!-- Form -->
+          <form action="" class="bg-white rounded-2xl p-6">
+            
+            <!-- Receiver Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">User Account Number</label>
+              <input
+                type="text"
+                id="account-number"
+                inputmode="numeric"
+                placeholder="Enter 11 digit number"
+               class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+
+            <!-- Amount -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Amount</label>
+              <input
+                type="text"
+                id="amount"
+                inputmode="numeric"
+                placeholder="Enter Amount to transfer"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+
+            <!-- Pin Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
+              <input
+                type="text"
+                id="pin"
+                maxlength="4"
+                inputmode="numeric"
+                placeholder="Enter 4 digit pin number"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+          
+            <!-- Transfer Button -->
+            <button id="add-money-button"  class="btn bg-[#3B25C1] text-white    md:text-xl w-full rounded-3xl mt-3 py-6">
+              Transfer Now
+            </button>
+          </form>
+        </section>
+        <!-- Get Bonus Form -->
+        <section id="cash-out-form" class="max-w-lg  mx-auto px-4 mt-4 pb-32">
+
+          <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Get Bonus</h1>
+      
+          <!-- Form -->
+          <form action="" class="bg-white rounded-2xl p-6">
+            
+            <!-- Get Bonus Coupon -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Enter Bonus Coupon</label>
+              <input
+                type="text"
+                id="account-number"
+                inputmode="numeric"
+                placeholder="Enter Your Coupon"
+               class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+
+            <!-- Pin Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
+              <input
+                type="text"
+                id="pin"
+                maxlength="4"
+                inputmode="numeric"
+                placeholder="Enter 4 digit pin number"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+          
+            <!-- Get Bonus  Button -->
+            <button id="add-money-button"  class="btn bg-[#3B25C1] text-white    md:text-xl w-full rounded-3xl mt-3 py-6">
+              Get Bonus
+            </button>
+          </form>
+        </section>
+        <!-- Pay Bill Form -->
+        <section id="add-money-form" class="max-w-lg  mx-auto px-4 mt-4 pb-32">
+
+          <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Pay Bill</h1>
+      
+          <!-- Form -->
+          <form action="" class="bg-white rounded-2xl p-6">
+            <!-- Bank select -->
+            <div class="mb-4">
+              <h1 class="font-medium text-[#080808b3]">Select to pay</h1>
+              <select id="bank" class="select w-full rounded-3xl mt-3">
+                <option disabled selected>Select Bank</option>
+                <option>Electricity</option>
+                <option>Gas</option>
+                <option>Internet</option>
+              </select>
+            </div>
+
+            <!-- Account Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Biller Account Number</label>
+              <input
+                type="text"
+                id="account-number"
+                inputmode="numeric"
+                placeholder="Enter account number"
+               class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+
+            <!-- Amount -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Amount to Pay</label>
+              <input
+                type="text"
+                id="amount"
+                inputmode="numeric"
+                placeholder="Add Amount to Pay"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+
+            <!-- Pin Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
+              <input
+                type="text"
+                id="pin"
+                maxlength="4"
+                inputmode="numeric"
+                placeholder="Enter 4 digit pin number"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+          
+            <!-- Add Money Button -->
+            <button id="add-money-button"  class="btn bg-[#3B25C1] text-white    md:text-xl w-full rounded-3xl mt-3 py-6">
+              Pay Now
             </button>
           </form>
         </section>

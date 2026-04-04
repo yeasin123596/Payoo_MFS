@@ -22,7 +22,7 @@
     <!-- Font Awesome CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-<body class=" font-[Outfit] bg-[#F4F5F7] ">
+  <body class=" font-[Outfit] bg-[#F4F5F7] ">
     <div class="max-w-lg  mx-auto bg-white rounded-b-xl  py-4">
       <!-- Logo and Nav Bar -->
      <header>
@@ -32,10 +32,10 @@
             <!-- logo -->
             <img src="./assets/logo.png" alt="" class="w-16 h-12">
             <!-- Balance -->
-            <div >
+              <div >
                 <h2 class="font-bold text-xl">$ <span id="available-amount">10000000</span></h2>
                 <p class="font-normal text-[1.2rem] text-[#08080880]">Available Balance</p>
-            </div>
+              </div>
           </div>
           <!-- LogOut Button -->
           <div>
@@ -47,113 +47,167 @@
           </div>
         </nav>
      </header>
-    <!-- Features Button Section -->
-     <section class="px-4 mt-8">
-      <!-- Hero Text -->
-      <div>
+      <!-- Features Button Section -->
+      <section class="px-4 mt-8">
+        <!-- Hero Text -->
+        <div>
         <h1 class="font-bold text-2xl">Welcome to Pay<span class="text-[#7460FF]">oo</span></h1>
         <p class="text-[#08080880] text-[1rem] mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
-      </div>
-      <!-- Features Card container -->
-       <div class="grid grid-cols-3 gap-4 mt-6">
-        <!-- feature-1 -->
-        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+        </div>
+        <!-- Services Card container -->
+        <div class="grid grid-cols-3 gap-4 mt-6">
+        <!-- Add Money Service -->
+        <div id="add-money-service" class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
           <img src="./assets/opt-1.png" class="mx-auto mb-2" alt="">
           <h2 class="text-[#08080880]">Add Money</h2>
         </div>
-        <!-- feature-2 -->
-        <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
+        <!-- Cash Out Service -->
+        <div id="cash-out-service"  class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
           <img src="./assets/opt-2.png" class="mx-auto mb-2" alt="">
           <h2 class="text-[#08080880]">Cash Out</h2>
         </div>
-        <!-- feature-3 -->
+        <!-- Transfer Money Service -->
         <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
           <img src="./assets/opt-3.png" class="mx-auto mb-2" alt="">
           <h2 class="text-[#08080880]">Transfer Money</h2>
         </div>
-        <!-- feature-4 -->
+        <!-- Get Bonus Service -->
         <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
           <img src="./assets/opt-4.png" class="mx-auto mb-2" alt="">
           <h2 class="text-[#08080880]">Get Bonus</h2>
         </div>
-        <!-- feature-5 -->
+        <!-- Pay Bill Service -->
         <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
           <img src="./assets/opt-5.png" class="mx-auto mb-2" alt="">
           <h2 class="text-[#08080880]">Pay Bill</h2>
         </div>
-        <!-- feature-6 -->
+        <!-- Transactions Service -->
         <div class=" text-center px-7 py-5 border border-gray-300 rounded-xl">
           <img src="./assets/opt-6.png" class="mx-auto mb-2" alt="">
           <h2 class="text-[#08080880]">Transactions</h2>
         </div>
-       </div>
-     </section>
+        </div>
+      </section>
     </div>
 
     <!-- All forms section -->
-     <section class="max-w-lg  mx-auto px-4 mt-4 pb-32">
+    <div>
+        <!-- Add Money Form -->
+        <section id="add-money-form" class="max-w-lg  mx-auto px-4 mt-4 pb-32">
 
-      <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Add Money</h1>
+          <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Add Money</h1>
       
-        <!-- Form -->
-        <form action="" class="bg-white rounded-2xl p-6">
-          <!-- Bank select -->
-          <div class="mb-4">
-            <h1 class="font-medium text-[#080808b3]">Select A Bank</h1>
-            <select id="bank" class="select w-full rounded-3xl mt-3">
-              <option disabled selected>Select Bank</option>
-              <option>Bank A</option>
-              <option>Bank B</option>
-              <option>Bank C</option>
-            </select>
-          </div>
+          <!-- Form -->
+          <form action="" class="bg-white rounded-2xl p-6">
+            <!-- Bank select -->
+            <div class="mb-4">
+              <h1 class="font-medium text-[#080808b3]">Select A Bank</h1>
+              <select id="bank" class="select w-full rounded-3xl mt-3">
+                <option disabled selected>Select Bank</option>
+                <option>Bank A</option>
+                <option>Bank B</option>
+                <option>Bank C</option>
+              </select>
+            </div>
 
-          <!-- Account Number -->
-          <div class="mb-4">
-            <label for="" class="font-medium text-[#080808b3]">Bank Account Number</label>
-            <input
-              type="text"
-              id="account-number"
-              inputmode="numeric"
-              placeholder="Enter 11 digit account number"
-              class="input rounded-3xl  mt-3 w-full"
-            />
-          </div>
+            <!-- Account Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Bank Account Number</label>
+              <input
+                type="text"
+                id="account-number"
+                inputmode="numeric"
+                placeholder="Enter 11 digit account number"
+               class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
 
-          <!-- Amount -->
-          <div class="mb-4">
-            <label for="" class="font-medium text-[#080808b3]">Amount to Add</label>
-            <input
-              type="text"
-              id="amount"
-              inputmode="numeric"
-              placeholder="Add Amount to add"
-              class="input rounded-3xl  mt-3 w-full"
-            />
-          </div>
+            <!-- Amount -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Amount to Add</label>
+              <input
+                type="text"
+                id="amount"
+                inputmode="numeric"
+                placeholder="Add Amount to add"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
 
-          <!-- Pin Number -->
-          <div class="mb-4">
-            <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
-            <input
-              type="text"
-              id="pin"
-              maxlength="4"
-              inputmode="numeric"
-              placeholder="Enter 4 digit pin number"
-              class="input rounded-3xl  mt-3 w-full"
-            />
-          </div>
+            <!-- Pin Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
+              <input
+                type="text"
+                id="pin"
+                maxlength="4"
+                inputmode="numeric"
+                placeholder="Enter 4 digit pin number"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
           
-          <!-- Add Money Button -->
-          <button id="add-money-button"  class="btn bg-[#3B25C1] text-white md:text-xl w-full rounded-3xl mt-3 py-6">
-            Add Money
-          </button>
-          
-        </form>
+            <!-- Add Money Button -->
+            <button id="add-money-button"  class="btn bg-[#3B25C1] text-white    md:text-xl w-full rounded-3xl mt-3 py-6">
+              Add Money
+            </button>
+          </form>
+        </section>
+        <!-- Cash Out Form -->
+        <section id="cash-out-form" class="max-w-lg  mx-auto px-4 mt-4 pb-32">
+
+          <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Cash Out</h1>
       
-     </section>
+          <!-- Form -->
+          <form action="" class="bg-white rounded-2xl p-6">
+            
+            <!-- Agent Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Bank Account Number</label>
+              <input
+                type="text"
+                id="account-number"
+                inputmode="numeric"
+                placeholder="Enter 11 digit number"
+               class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
 
-     <script src="./scripts/add-money.js"></script>
-</body>
+            <!-- Amount -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Amount to Add</label>
+              <input
+                type="text"
+                id="amount"
+                inputmode="numeric"
+                placeholder="Add Amount to add"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+
+            <!-- Pin Number -->
+            <div class="mb-4">
+              <label for="" class="font-medium text-[#080808b3]">Pin Number</label>
+              <input
+                type="text"
+                id="pin"
+                maxlength="4"
+                inputmode="numeric"
+                placeholder="Enter 4 digit pin number"
+                class="input rounded-3xl  mt-3 w-full"
+              />
+            </div>
+          
+            <!-- Cash Out Button -->
+            <button id="add-money-button"  class="btn bg-[#3B25C1] text-white    md:text-xl w-full rounded-3xl mt-3 py-6">
+              Cash Out
+            </button>
+          </form>
+        </section>
+    </div>
+
+
+    <script src="./scripts/add-money.js"></script>
+    <script src="./scripts/toggle.js"></script>
+  </body>
 </html>

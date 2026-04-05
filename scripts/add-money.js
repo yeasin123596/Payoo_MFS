@@ -1,7 +1,3 @@
-
-
-
-
 // Add Money Feature
 
 const validPin = 1234;

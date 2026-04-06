@@ -29,9 +29,15 @@ document.getElementById("add-money-button")
     }
 
     const totalNewAvailableAmount = availableAmount + amount;
-    console.log(totalNewAvailableAmount);
 
     document.getElementById("available-amount").innerText = totalNewAvailableAmount;
+
+    const data = {
+        name:"Add Money",
+        time:new Date().toLocaleTimeString()
+    }
+
+    transactionData.push(data);
 
     this.form.reset();
  

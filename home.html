@@ -82,7 +82,7 @@
           <h2 class="text-[#08080880]">Pay Bill</h2>
         </div>
         <!-- Transactions Service -->
-        <div class="service-btn text-center px-7 py-5 border border-gray-300 rounded-xl">
+        <div id="transactions-service" class="service-btn text-center px-7 py-5 border border-gray-300 rounded-xl">
           <img src="./assets/opt-6.png" class="mx-auto mb-2" alt="">
           <h2 class="text-[#08080880]">Tran-<br>sactions</h2>
         </div>
@@ -93,7 +93,7 @@
     <!-- All forms section -->
     <div>
         <!-- Add Money Form -->
-        <section id="add-money-form" class="form  max-w-lg  mx-auto px-4 mt-4 pb-32">
+        <section id="add-money-form" style="display: none;" class="form  max-w-lg  mx-auto px-4 mt-4 pb-32">
 
           <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Add Money</h1>
       
@@ -154,7 +154,7 @@
           </form>
         </section>
         <!-- Cash Out Form -->
-        <section id="cash-out-form" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
+        <section id="cash-out-form" style="display: none;" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
 
           <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Cash Out</h1>
       
@@ -205,7 +205,7 @@
           </form>
         </section>
         <!-- Transfer Money Form -->
-        <section id="transfer-money-form" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
+        <section id="transfer-money-form" style="display: none;" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
 
           <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Transfer Money</h1>
       
@@ -256,7 +256,7 @@
           </form>
         </section>
         <!-- Get Bonus Form -->
-        <section id="get-bonus-form" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
+        <section id="get-bonus-form" style="display: none;" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
 
           <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Get Bonus</h1>
       
@@ -295,7 +295,7 @@
           </form>
         </section>
         <!-- Pay Bill Form -->
-        <section id="pay-bill-form" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
+        <section id="pay-bill-form" style="display: none;" class="form max-w-lg  mx-auto px-4 mt-4 pb-32">
 
           <h1 class="font-semibold text-xl text-[#080808e6] mb-4">Pay Bill</h1>
       
@@ -355,9 +355,21 @@
             </button>
           </form>
         </section>
+        <!-- Transactions From -->
+        <section id="transactions-form" class="form max-w-lg  mx-auto px-4 mt-4 pb-32 min-h-[50vw] ">
+          <div class="flex justify-between items-center mb-5">
+            <h1 class="font-semibold text-xl text-[#080808e6] ">Transactions</h1>
+            <p class="text-[#08080880]">View All</p>
+          </div>
+
+          <!-- Transaction Data Card Container -->
+          <div id="transaction-container">
+            
+          </div>
+        </section>
     </div>
 
-
+    <script src="./utilities/utilities.js"></script>
     <script src="./scripts/add-money.js"></script>
     <script src="./scripts/toggle.js"></script>
     <script src="./scripts/logout.js"></script>

@@ -30,5 +30,12 @@ document.getElementById("cash-out-button").addEventListener("click", function(ev
     const totalAvailableAmount = availableAmount - amount;
     document.getElementById("available-amount").innerText = totalAvailableAmount;
 
+    const data = {
+        name:"Cash Out",
+        time:new Date().toLocaleTimeString()
+    }
+
+    transactionData.push(data);
+
     this.form.reset();
 })

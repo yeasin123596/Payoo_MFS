@@ -50,3 +50,9 @@ document.getElementById("pay-bill-service").addEventListener('click', function()
     handelToggle("pay-bill-form");
     changeStyle("pay-bill-service");
 })
+
+// Transactions Toggle
+document.getElementById("transactions-service").addEventListener('click', function(){
+    handelToggle("transactions-form");
+    changeStyle("transactions-service");
+})
